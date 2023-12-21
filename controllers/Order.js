@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 require("dotenv").config()
 const stripe = require("stripe")(process.env.My_Stripe_Key);
 const { StatusCodes } = require("http-status-codes");
-const YOUR_DOMAIN = 'http://localhost:5173';
+const YOUR_DOMAIN = 'https://frontend-jmabpdjwf-kamal-joshis-projects.vercel.app';
 const createOrder = async (req, res) => {
   try {
     let product = req.body
